@@ -1,3 +1,6 @@
+RStudio:
+vmbosch.eastus2.cloudapp.azure.com
+
 Main Email:
 atin.kh@outlook.com - Azure Pass - Sponsorship (4f80b645-0033-427b-b367-5a136181cd51)
 
