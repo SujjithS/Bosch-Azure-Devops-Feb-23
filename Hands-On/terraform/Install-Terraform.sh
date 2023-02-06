@@ -16,7 +16,7 @@ terraform version
 terraform -install-autocomplete
 
 # Configure Terraform
-## Login to Azure CLI
+## Login to Azure CLI (Optional. Can use SP instead). Can also use mobiles to authenticate
 az login --use-device-code
 az account list
 az account set --subscription="SUBSCRIPTION_ID"

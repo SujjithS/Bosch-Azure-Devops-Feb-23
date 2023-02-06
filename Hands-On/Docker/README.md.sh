@@ -1,8 +1,8 @@
 # Setup Docker
-#sudo apt-get remove -y docker docker-ce-cli docker-ce docker-engine docker.io containerd runc
-#curl -fsSL get.docker.com -o get-docker.sh
-#sh get-docker.sh
-#sudo usermod -aG docker $USER
+sudo apt-get remove -y docker docker-ce-cli docker-ce docker-engine docker.io containerd runc
+curl -fsSL get.docker.com -o get-docker.sh
+sh get-docker.sh
+sudo usermod -aG docker $USER
 
 # Now should logout and login again
 docker version

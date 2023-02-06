@@ -32,7 +32,7 @@ sed -i "s/0040020a-b598-444c-8f0b-92f82e1224c0/$tenant_id/g" ubuntu-test-var.pkr
 sed -i "s/944c019d-3e46-422b-b63a-86513f147562/$subscription_id/g" ubuntu-test-var.pkr.hcl
 sed -i "s/944c019d-3e46-422b-b63a-86513f147562/$image_sku/g" ubuntu-test-var.pkr.hcl
 
+sleep 60
+
 # Update the file - ubuntu-test-var.pkr.hcl
 packer build .
-az vm create -resource-group myResourceGroup -name myVM -image myPackerImage -admin-username azureuser -generate-ssh-keys
-az vm open-port -resource-group myResourceGroup -name myVM -port 80

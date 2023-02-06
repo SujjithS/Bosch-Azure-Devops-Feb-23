@@ -1,6 +1,6 @@
 plugin: azure_rm
 
 include_vm_resource_groups:
-  - rgvmknowledgehut
+  - RGVMBOSCH
 
 auth_source: auto

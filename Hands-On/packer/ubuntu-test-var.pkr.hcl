@@ -5,29 +5,29 @@
 
 variable "image_sku" {
   type =  string
-  default = "19_04-gen2"
+  default = "18.04-LTS"
 }
 
 variable "client_secret" {
   type =  string
-  default = "insertyoursecrethereforthesp"
+  default = "qlx8Q~SnsKPAN0JacvGYOOoLgynZXO64-.QuEafi"
   // Sensitive vars are hidden from output as of Packer v1.6.5
   sensitive = false
 }
 
 variable "client_id" {
   type =  string
-  default = "d2390854-6661-451d-bee2-3bd9b42b14cc"
+  default = "4d243e4b-fa64-4413-9dc9-c69f3b957534"
   // Sensitive vars are hidden from output as of Packer v1.6.5
   sensitive = false
 }
 
 variable "tenant_id" {
   type = string
-  default = "0040020a-b598-444c-8f0b-92f82e1224c0"
+  default = "5ef85d7a-355f-4c96-890c-33ccbb53400c"
 }
 
 variable "subscription_id" {
   type = string
-  default = "944c019d-3e46-422b-b63a-86513f147562"
+  default = "4f80b645-0033-427b-b367-5a136181cd51"
 }

@@ -1,9 +1,6 @@
 source ~/python_venv/bin/activate
 
-# init terraform's Azure provider (main.tf)
-terraform init
-
-export sa_name="tfsttbscgolwob"
+export sa_name="tfsttbscjsztui"   # Change
 
 echo $sa_name
 
@@ -11,7 +8,15 @@ sed -i "s/tfsttbscmysaname/$sa_name/g" c1-versions.tf
 
 cat c1-versions.tf
 
-# deploy terraform infra
+# init terraform's Azure provider (main.tf)
+terraform init
+
+terraform plan
+
+# Prepare deplpyment report
+terraform apply
+
+# Deploy (Optional)
 terraform apply -auto-approve
 
 chmod 400 ./ssh-keys/*

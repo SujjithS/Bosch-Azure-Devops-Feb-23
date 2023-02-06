@@ -9,3 +9,4 @@ terraform plan
 
 # deploy terraform infra
 terraform apply -auto-approve
+

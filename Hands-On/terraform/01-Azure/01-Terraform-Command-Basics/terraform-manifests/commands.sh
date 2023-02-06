@@ -12,7 +12,10 @@ az account set --subscription="SUBSCRIPTION_ID"
 # init terraform's Azure provider (main.tf)
 terraform init
 
-# deploy terraform infra
+# Prepare deplpyment report
+terraform apply
+
+# deploy terraform infra (Optional)
 terraform apply -auto-approve
 
 # destroy infra
