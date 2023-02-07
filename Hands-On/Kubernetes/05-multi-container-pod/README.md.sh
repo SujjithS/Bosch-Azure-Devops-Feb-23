@@ -4,6 +4,10 @@ kubectl get pods
 
 kubectl expose pod mc1  --type=LoadBalancer --port=80 --name=multi-pod-service
 
+sleep 30
+
+kubectl get svc
+
 POD_PUBLIC_IP=$(kubectl get svc multi-pod-service -o json | jq .status.loadBalancer.ingress[0].ip)
 POD_PUBLIC_IP2=${POD_PUBLIC_IP//\"}
 
@@ -20,12 +24,14 @@ kubectl delete svc multi-pod-service
 
 kubectl apply -f kube-manifests/multi-pod-init.yaml
 kubectl get pods
-kubectl logs -f init-demo
+sleep 10
 
 kubectl logs init-demo -c install
 kubectl logs init-demo -c nginx
 
 kubectl expose pod init-demo  --type=LoadBalancer --port=80 --name=init-pod-service
+
+sleep 30
 
 kubectl get svc init-pod-service
 

@@ -4,6 +4,8 @@ curl -fsSL get.docker.com -o get-docker.sh
 sh get-docker.sh
 sudo usermod -aG docker $USER
 
+ls
+
 # Now should logout and login again
 docker version
 

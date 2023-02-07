@@ -26,6 +26,10 @@ kubectl run my-first-pod --image atingupta2005/kubenginx:1.0.0
 # Expose Pod as a Service
 kubectl expose pod my-first-pod  --type=LoadBalancer --port=80 --name=my-first-service
 
+sleep 60
+
+kubectl get svc
+
 # Describe Service
 kubectl describe service my-first-service
 
@@ -37,7 +41,7 @@ echo $SVC_PUB_IP2
 curl $SVC_PUB_IP2
 
 # Stream pod logs with -f option and access application to see logs
-kubectl logs -f my-first-pod
+kubectl logs my-first-pod
 
 # Connect to Nginx Container in a POD
 kubectl exec -it my-first-pod -- /bin/bash

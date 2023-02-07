@@ -10,8 +10,9 @@ POD_NAME=$(kubectl get pods -o json | jq .items[0].metadata.name)
 POD_NAME2=${POD_NAME//\"}
 echo $POD_NAME2
 
+sleep 10
 # Verify logs of Usermgmt Web Application Pod
-kubectl logs -f $POD_NAME2    # Press CTRL+C to come out
+kubectl logs $POD_NAME2
 
 
 # Verify sc, pvc, pv
@@ -21,6 +22,7 @@ kubectl get sc,pvc,pv
 #- **Access Application**
 
 # List Services
+sleep 10
 kubectl get svc usermgmt-webapp-service
 
 SVC_PUB_IP=$(kubectl get svc usermgmt-webapp-service -o json | jq .status.loadBalancer.ingress[0].ip)

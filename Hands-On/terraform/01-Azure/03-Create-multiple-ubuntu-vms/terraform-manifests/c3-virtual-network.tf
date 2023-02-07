@@ -1,6 +1,6 @@
 # Create Virtual Network
 resource "azurerm_virtual_network" "myvnet" {
-  name                = "myvnet-1"        # Change
+  name                = "u50vnet-1"        # Change
   address_space       = ["10.0.0.0/16"]
   location            = azurerm_resource_group.myrg.location
   resource_group_name = azurerm_resource_group.myrg.name
@@ -17,7 +17,7 @@ resource "azurerm_subnet" "mysubnet" {
 # Create Azure Public IP Address
 resource "azurerm_public_ip" "mypublicip" {
   count = 2
-  name                = "mypublicip-${count.index}"       # Change
+  name                = "u50publicip-${count.index}"       # Change
   resource_group_name = azurerm_resource_group.myrg.name
   location            = azurerm_resource_group.myrg.location
   allocation_method   = "Static"

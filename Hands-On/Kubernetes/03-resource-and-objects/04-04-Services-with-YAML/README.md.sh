@@ -17,6 +17,8 @@ kubectl get all
 # Get Service IP
 kubectl get svc frontend-nginxapp-loadbalancer-service
 
+sleep 30
+
 SVC_PUB_IP=$(kubectl get svc frontend-nginxapp-loadbalancer-service -o json | jq .status.loadBalancer.ingress[0].ip)
 SVC_PUB_IP2=${SVC_PUB_IP//\"}
 echo $SVC_PUB_IP2
