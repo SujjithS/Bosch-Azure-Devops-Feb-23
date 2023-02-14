@@ -2,7 +2,7 @@ trigger: none
 pr: none
 
 jobs:
-- job: run gtest
+- job: run_gtest
   steps:
   - checkout: self  
     lfs: true
