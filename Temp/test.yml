@@ -1,0 +1,9 @@
+trigger: none
+pr: none
+
+jobs:
+- job: run gtest
+  steps:
+  - checkout: self  
+    lfs: true
+  - bash: python $(Pipeline.Workspace)/Temp/gtest.py
