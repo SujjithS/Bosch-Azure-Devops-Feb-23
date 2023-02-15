@@ -7,6 +7,6 @@ jobs:
   - checkout: self  
     lfs: true
   - bash: python $(Pipeline.Workspace)/s/gtest.py
-  - publish: $(Pipeline.Workspace)/s/build/unit_tests
-    artifact: sw-build-log-$(System.StageAttempt)-$(System.JobAttempt)
-    displayName: executable
+  - publish: $(Pipeline.Workspace)/s/build
+    artifact: log-$(System.StageAttempt)-$(System.JobAttempt)
+    displayName: Publish artifacts
