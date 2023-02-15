@@ -6,4 +6,4 @@ jobs:
   steps:
   - checkout: self  
     lfs: true
-  - bash: python $(Pipeline.Workspace)/s/Temp/gtest.py
+  - bash: python $(Pipeline.Workspace)/s/gtest.py

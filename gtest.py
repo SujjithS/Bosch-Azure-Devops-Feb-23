@@ -8,7 +8,7 @@ def main():
 
 	subprocess.run(["cmake", ".."])
 	subprocess.run(["make"])
-	subprocess.run(["./uLRR_unit_tests"])
+	subprocess.run(["./unit_tests"])
 
 if __name__=='__main__':
 	main()

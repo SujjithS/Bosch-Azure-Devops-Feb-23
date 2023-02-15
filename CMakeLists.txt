@@ -11,11 +11,11 @@ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 enable_testing()
 
 add_executable(${CMAKE_PROJECT_NAME}
-	googletest/test_main.cpp
+	Temp/googletest/test_main.cpp
 )
 
-add_subdirectory(googletest/)
-add_subdirectory(sample/test)
+add_subdirectory(Temp/googletest/)
+add_subdirectory(Temp/sample/test/)
 
 
 target_include_directories(${CMAKE_PROJECT_NAME}
