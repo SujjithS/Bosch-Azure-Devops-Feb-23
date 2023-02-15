@@ -1,6 +1,6 @@
 TEAM_NO="1"
 AKS_NAME="aks$TEAM_NO"
-AKS_RG="rgaks$TEAM_NO
+AKS_RG="rgaks$TEAM_NO"
 mylocation="eastus2"
 
 # Only by one developer per team, need to run below 2 commands
