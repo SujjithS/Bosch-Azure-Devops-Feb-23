@@ -5,4 +5,4 @@
 
 
 ### R Studio
- - http://vmbosch.eastus2.cloudapp.azure.com/
+ - http://vmbosch.eastus.cloudapp.azure.com/
