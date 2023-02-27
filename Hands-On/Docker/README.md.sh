@@ -9,7 +9,7 @@ ls
 # Now should logout and login again
 docker version
 
-USER_SUFFIX=${USER: -2}
+USER_SUFFIX=50
 echo $USER_SUFFIX
 
 # Creating and Using Containers
