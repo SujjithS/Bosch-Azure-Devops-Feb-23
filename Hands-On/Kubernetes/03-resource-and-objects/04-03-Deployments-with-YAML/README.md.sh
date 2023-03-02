@@ -1,7 +1,7 @@
 # Deployments with YAML
 # Create Deployment
 
-kubectl create namespace "ns-$USER"
+#kubectl create namespace "ns-$USER"
 
 kubectl config set-context --current --namespace="ns-$USER"
 
@@ -22,6 +22,8 @@ kubectl apply -f kube-manifests/03-deployment-LoadBalancer-service.yml
 
 # List Service
 kubectl get svc deployment-loadbalancer-service
+
+sleep 30
 
 SVC_PUB_IP=$(kubectl get svc deployment-loadbalancer-service -o json | jq .status.loadBalancer.ingress[0].ip)
 SVC_PUB_IP2=${SVC_PUB_IP//\"}

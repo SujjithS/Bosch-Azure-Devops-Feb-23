@@ -1,4 +1,5 @@
 RStudio:
+<<<<<<< HEAD
 vmbosch.eastus2.cloudapp.azure.com
 
 Main Email:
@@ -37,4 +38,29 @@ u27@atinkhoutlook.onmicrosoft.com
 u28@atinkhoutlook.onmicrosoft.com
 u29@atinkhoutlook.onmicrosoft.com
 u30@atinkhoutlook.onmicrosoft.com
+=======
+vmbosch.eastus.cloudapp.azure.com
+>>>>>>> 267686ec095d3f939015c2216318e712c5c7ad71
 
+u01@atingupta2005gmailcom.onmicrosoft.com
+u02@atingupta2005gmailcom.onmicrosoft.com
+u03@atingupta2005gmailcom.onmicrosoft.com
+u04@atingupta2005gmailcom.onmicrosoft.com
+u05@atingupta2005gmailcom.onmicrosoft.com
+u06@atingupta2005gmailcom.onmicrosoft.com
+u07@atingupta2005gmailcom.onmicrosoft.com
+u08@atingupta2005gmailcom.onmicrosoft.com
+u09@atingupta2005gmailcom.onmicrosoft.com
+u10@atingupta2005gmailcom.onmicrosoft.com
+u11@atingupta2005gmailcom.onmicrosoft.com
+u12@atingupta2005gmailcom.onmicrosoft.com
+u13@atingupta2005gmailcom.onmicrosoft.com
+u14@atingupta2005gmailcom.onmicrosoft.com
+u15@atingupta2005gmailcom.onmicrosoft.com
+u16@atingupta2005gmailcom.onmicrosoft.com
+u17@atingupta2005gmailcom.onmicrosoft.com
+u18@atingupta2005gmailcom.onmicrosoft.com
+u19@atingupta2005gmailcom.onmicrosoft.com
+u20@atingupta2005gmailcom.onmicrosoft.com
+u21@atingupta2005gmailcom.onmicrosoft.com
+u22@atingupta2005gmailcom.onmicrosoft.com

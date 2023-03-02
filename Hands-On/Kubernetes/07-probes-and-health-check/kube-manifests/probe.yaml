@@ -4,9 +4,8 @@ metadata:
   labels:
     app: currency-exchange
   name: currency-exchange
-  namespace: default
 spec:
-  replicas: 1 #CHANGE
+  replicas: 5 #CHANGE
   minReadySeconds: 45
   selector:
     matchLabels:
@@ -46,7 +45,6 @@ metadata:
   labels: #PODS
     app: currency-exchange
   name: currency-exchange
-  namespace: default
 spec:
   ports:
    - port: 8000
