@@ -7,6 +7,6 @@ metadata: # Dictionary
 spec:
   containers: # List
     - name: myapp
-      image: atingupta2005/kubenginx:1.0.0
+      image: acru15.azurecr.io/hello-world-u13:latest
       ports:
         - containerPort: 80
